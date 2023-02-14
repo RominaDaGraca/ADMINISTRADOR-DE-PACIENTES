@@ -27,14 +27,11 @@ export function datosCita(e) {
     //  console.log(e.target.name) // Obtener el Input
      citaObj[e.target.name] = e.target.value;
 }
-export function limitarTelefono(){
-    
-    
+/*export function limitarTelefono(){
     if(telefonoInput.value.length>12){
         telefonoInput.value= telefonoInput.value.substr(0,11);
     }       
-}
-
+}*/
 export function nuevaCita(e) {
     e.preventDefault();
 

@@ -13,9 +13,11 @@ class App{
         this.initApp();
     }
     initApp(){
+        eventListeners();
+        function eventListeners(){ 
         nombreInput.addEventListener('change', datosCita);
         apellidoInput.addEventListener('change', datosCita);
-        telefonoInput.addEventListener('keyup',limitarTelefono);
+        //telefonoInput.addEventListener('keyup',limitarTelefono);
         telefonoInput.addEventListener('change', datosCita);
         fechaInput.addEventListener('change', datosCita);
         horaInput.addEventListener('change', datosCita);
@@ -23,5 +25,8 @@ class App{
 
         //Formulario para nuevas citas
         formulario.addEventListener('submit', nuevaCita);
+        }
     }
 }
+
+export default App;
